@@ -166,7 +166,7 @@ class Routing {
     this.setScheme(data.scheme);
   };
 }
-module.export = new Routing();
+module.exports = new Routing();
 
 
 
