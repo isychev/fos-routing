@@ -1,0 +1,30 @@
+{
+  "name": "fos-routing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/routing.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "build:prod": "NODE_ENV=production babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isychev/fos-routing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isychev/fos-routing/issues"
+  },
+  "homepage": "https://github.com/isychev/fos-routing#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-preset-babili": "^0.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babili": "^0.1.3"
+  }
+}
