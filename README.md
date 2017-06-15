@@ -1,5 +1,5 @@
 # fos-routing
-es6 library for client generate path from symfony routing
+es6 library for client generate path from symfony2 routing
 
 ### Installing
 
@@ -8,7 +8,7 @@ npm install fos-routing --save
 ```
 
 ### Usage
-To work with Symfony, you need to generate a js or json file with paths with **fos:js-routing**
+To work with Symfony2, you need to generate a js or json file with paths with **fos:js-routing**
 
 ```php bin/console fos:js-routing:dump --callback="module.exports = " --target="any_custom_path || web/dist/fos_js_routes_export.js"```
 
