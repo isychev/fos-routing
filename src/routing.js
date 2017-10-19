@@ -59,7 +59,7 @@ class Routing {
   generate = (name, optParams, absolute) => {
     const route = this.getRoute(name);
     const params = optParams || {};
-    const unusedParams = Object.assign({}, params);
+    const unusedParams = {...params};
     const schemaVar = '_scheme';
     let url = '';
     let optional = true;
