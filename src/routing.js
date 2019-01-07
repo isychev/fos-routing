@@ -1,26 +1,26 @@
 class Routing {
   constructor() {
-    this.contextRoutung = { base_url: '', prefix: '', host: '', scheme: '' };
+    this.contextRouting = { base_url: '', prefix: '', host: '', scheme: '' };
   }
   setRoutes = routes => {
     this.routesRouting = routes || [];
   };
   getRoutes = () => this.routesRouting;
   setBaseUrl = baseUrl => {
-    this.contextRoutung.base_url = baseUrl;
+    this.contextRouting.base_url = baseUrl;
   };
-  getBaseUrl = () => this.contextRoutung.base_url;
+  getBaseUrl = () => this.contextRouting.base_url;
   setPrefix = prefix => {
-    this.contextRoutung.prefix = prefix;
+    this.contextRouting.prefix = prefix;
   };
   setScheme = scheme => {
-    this.contextRoutung.scheme = scheme;
+    this.contextRouting.scheme = scheme;
   };
-  getScheme = () => this.contextRoutung.scheme;
+  getScheme = () => this.contextRouting.scheme;
   setHost = host => {
-    this.contextRoutung.host = host;
+    this.contextRouting.host = host;
   };
-  getHost = () => this.contextRoutung.host;
+  getHost = () => this.contextRouting.host;
 
   buildQueryParams = (prefix, params, add) => {
     const self = this;
@@ -46,7 +46,7 @@ class Routing {
     }
   };
   getRoute = name => {
-    const prefixedName = this.contextRoutung.prefix + name;
+    const prefixedName = this.contextRouting.prefix + name;
     if (!this.routesRouting[prefixedName]) {
       if (!this.routesRouting[name]) {
         throw new Error(`The route "${name}" does not exist.`);
