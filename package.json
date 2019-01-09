@@ -1,6 +1,6 @@
 {
   "name": "fos-routing",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "js routing for symfony 2.x",
   "main": "dist/routing.js",
   "scripts": {
