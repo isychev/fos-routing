@@ -126,7 +126,7 @@ class Routing {
         host = token[1] + value + host;
       }
     });
-    url = this.contextRoutung.base_url + url;
+    url = this.contextRouting.base_url + url;
     if (
       route.requirements[schemaVar] &&
       this.getScheme() !== route.requirements[schemaVar]
